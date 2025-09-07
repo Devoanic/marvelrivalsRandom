@@ -64,6 +64,8 @@ function showChampion() {
 
 function removeChampion() {
   if (char == null) {
+    document.getElementById("champion-name").innerText = "Nothing to remove!";
+    document.getElementById("champion-remove").innerText = "";
     return;
   }
   const index = chars.indexOf(char);
